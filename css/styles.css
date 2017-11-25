@@ -45,6 +45,7 @@ h1 {
     font-size: 24px;
     line-height: 1.867;
     margin-bottom: 0.933em;
+    margin-top: 30px;
 }
 h2{
     font-size: 21px;
@@ -161,10 +162,6 @@ h2.pubs {
      width: 100%;
 }
 
-.menu li {
-    display: inline-block;
-}
-
 @media (min-width: 640px){
     .columns {
         -moz-column-count: 2;
@@ -195,3 +192,42 @@ p, span.no-break {
 .cafe h3.beatroot {
     background: #bb3385;
 }
+
+.menu {
+    position: fixed;
+}
+
+
+.menu {    
+    background: #fff;
+    border: 1px solid #dedede;
+    position: fixed;  
+}
+
+.menu ul {
+    padding: 0 15px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.inner {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+#git-is-great {        
+        width: 340px; 
+        height: 150px; 
+        background-image: url(../img/gitscroll3.png);
+        background-position: 0px 0px;
+        background-repeat: repeat-x;
+        animation: animatedBackground 12s linear infinite;
+} 
