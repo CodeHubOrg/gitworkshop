@@ -5,8 +5,8 @@
 Here are some exercises to work with this repository, best as a team
 
 ### 1. Clone and view the history
-Start with cloning the directory: `git clone git@github.com:Codehuborg/gitworkshop.git`
-Use `git log --oneline –graph` and `git branch -a` to investigate
+Start with cloning the directory: `git@github.com:CodeHubOrg/gitworkshop.git`    
+Use `git log --oneline –graph` and `git branch -a` to investigate    
 Open the files in the editor. You can also look at the website by simply opening the index.html in a browser.  
 
 ### 2. These are some tasks we've been told to work on:
@@ -45,6 +45,7 @@ The pagraph under the title ("On this site you can find some of our favourite ca
 #### Feature Nav on remote branch
 There is a branch called *feature-nav* on the remote repository. Fetch this branch and check it out to your local repository. Play around with the styles for the navigation appearing in the top left corner. Then merge it into the appropriate branch, so it can be deployed. 
 
+*Note: If you work on your own, but want to try working with remotes and different cloned repos, you can simulate this situation on your hard drive; [see below](#simulate)*
 
 ### 3. Notes on strategies that might be used above 
 
@@ -65,6 +66,38 @@ Pull requests are often used in Open Source projects, where most contributers do
 You can then keep your repo sync'd with the project repo by pulling changes from there. When you want to contribute, you push to your clone, then you can make a pull request on the original branch through the GitHub interface. 
 A good explanation on how to track the original project repo is here: https://github.com/CodeHubOrg/discussions/issues/9
 
+<div id="simulate"></div>          
+
+#### Simulating a remote central repo, and cloned repos, on your hard drive
+
+- Create a repository that acts as storage, like a remote        
+        ```git init --bare central-repo.git```
+- Clone the remote repository                    
+        ```git clone git@github.com:CodeHubOrg/gitworkshop.git```
+        This creates a directory called gitworkshop.This will be your working directory                
+        ```cd gitworkshop```
+- Now add the central repository as another remote               
+        ```git remote add central ../central-repo.git```      
+        Check that the repo has been added with `git remote -v`,  you should see:                                  
+        ```
+        central central-repo.git (fetch) 
+        central central-repo.git (push)
+        ```
+- Push your files to the central repository: 
+        ```git push central master```
+- Create two co-workers:
+        ```cd ../``` takes you back to the root directory that contains ```central-repo.git```
+        ```git clone central-repo.git alice```
+        ```git clone central-repo.git bob```
+        Bothe these have the central repo set as origin, as you can see when you cd into one of them 
+          ```cd alice```
+        and list the remotes
+          ```remote -v```
+            ```
+            origin  [path/to/root]/central-repo.git/ (fetch)    
+            origin  [path/to/root]/central-repo.git/ (push)
+            ```
+            So now you have three identical repositories of which one, central-repo.git only acts as storage. The alice and bob repositories each have a copy and have the central repository set up as a remote named central. 
 
 ### About this repo
 
