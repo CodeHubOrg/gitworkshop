@@ -2,7 +2,7 @@
 
 ## Git workshop 
 
-
+Here are some exercises to work with this repository, best as a team
 
 ### 1. Clone and view the history
 Start with cloning the directory: git clone.. 
@@ -93,11 +93,11 @@ A good explanation on how to track the original project repo is here: https://gi
         and list the remotes
           `remote -v`
             `origin  [path/to/root]/central-repo.git/ (fetch)`    
-            `origin  [path/to/root]/central-repo.git/ (push)``
+            `origin  [path/to/root]/central-repo.git/ (push)`
     
            So now you have three identical repositories of which one, central-repo.git only acts as storage. The alice and bob repositories each have a copy and have the central repository set up as a remote named central. 
     
-### 4. About this repo
+### About this repo
 
 This repository was set up for a Git workshop for CodeHub Bristol in October 2016 and then modified for another workshop in February 2017. In November 2017 I added some new exercises. It is based on the idea from the [OpenTechSchool Git workshop](http://opentechschool.github.io/social-coding/) to add Cafes and Pubs to a directory. You can see the resulting website here: https://codehuborg.github.io/gitworkshop/
 
