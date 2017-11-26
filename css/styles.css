@@ -155,13 +155,6 @@ h2.pubs {
     border-radius: 0;   
 }
 
-.centered {
-    text-align: center;
-}
-.full {
-     width: 100%;
-}
-
 @media (min-width: 640px){
     .columns {
         -moz-column-count: 2;
