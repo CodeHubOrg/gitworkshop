@@ -71,33 +71,25 @@ A good explanation on how to track the original project repo is here: https://gi
 #### Simulating a remote central repo, and cloned repos, on your hard drive
 
 - Create a repository that acts as storage, like a remote        
-        ```git init --bare central-repo.git```
+```git init --bare central-repo.git```
 - Clone the remote repository                    
-        ```git clone git@github.com:CodeHubOrg/gitworkshop.git```
-        This creates a directory called gitworkshop.This will be your working directory                
-        ```cd gitworkshop```
+```git clone git@github.com:CodeHubOrg/gitworkshop.git```          
+This creates a directory called gitworkshop. This will be your working directory.               
+```cd gitworkshop```
 - Now add the central repository as another remote               
-        ```git remote add central ../central-repo.git```      
-        Check that the repo has been added with `git remote -v`,  you should see:                                  
-        ```
-        central central-repo.git (fetch) 
-        central central-repo.git (push)
-        ```
-- Push your files to the central repository: 
-        ```git push central master```
-- Create two co-workers:
-        ```cd ../``` takes you back to the root directory that contains ```central-repo.git```
-        ```git clone central-repo.git alice```
-        ```git clone central-repo.git bob```
-        Bothe these have the central repo set as origin, as you can see when you cd into one of them 
-          ```cd alice```
-        and list the remotes
-          ```remote -v```
-            ```
-            origin  [path/to/root]/central-repo.git/ (fetch)    
-            origin  [path/to/root]/central-repo.git/ (push)
-            ```
-            So now you have three identical repositories of which one, central-repo.git only acts as storage. The alice and bob repositories each have a copy and have the central repository set up as a remote named central. 
+```git remote add central ../central-repo.git```                    
+Check that the repo has been added with `git remote -v`. You should see:                                                                            
+```        
+central central-repo.git (fetch)                                    
+central central-repo.git (push)                                  
+```
+- Push your files to the central repository:                        
+        ```git push central master```                                  
+- Create two co-workers:                            
+```cd ../``` takes you back to the root directory that contains       ```central-repo.git```              
+```git clone central-repo.git alice```                         
+```git clone central-repo.git bob```               
+Both these have the central repo set as origin now. 
 
 ### About this repo
 
