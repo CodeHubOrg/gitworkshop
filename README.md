@@ -6,8 +6,8 @@ Here are some exercises to work with this repository, best as a team
 
 ### 1. Clone and view the history
 Start with cloning the directory: git clone.. 
-Use git log --oneline –graph and git branch -a to investigate
-Open the files in the editor. You can also look at the website by simply adding the 
+Use git log `--oneline –graph` and `git branch -a` to investigate
+Open the files in the editor. You can also look at the website by simply opening the index.html in a browser 
 
 ### 2. These are some tasks we've been told to work on:
 - Two new features are to be added to the About page, by two different developers
