@@ -13,7 +13,7 @@ Open the files in the editor. You can also look at the website by simply opening
 - Two new features are to be added to the About page, by two different developers
 - We need to fix a css bug
 - Somebody started a feature branch which adds a nav to the homepage; it needs to be finished and merged so it can be deployed
-( Optionally, additional cafes or pubs can be added as new features. Create an html file in the cafes or pubs directory, taking and existing file as template; then add the cafe or pub to the root index.html by copying an existing /<li/> element and modifying it. Don't be put off by the grid! )
+( Optionally, additional cafes or pubs can be added as new features. Create an html file in the cafes or pubs directory, taking and existing file as template; then add the cafe or pub to the root index.html by copying an existing \<li\> element and modifying it. Don't be put off by the grid! )
 
 If you are working in a team, make one person the manager of the central repo. This person should fork the repo to their own GitHub account and add the other team members as collaborators (ideally add their public keys under “deploy keys” in the repo settings)
 The other members can then add the manager's repository as a remote:
