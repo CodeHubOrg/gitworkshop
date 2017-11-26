@@ -27,9 +27,9 @@ Now decide what branching and deployment strategies you want to employ as a team
 
 #### Features on About page (done by one developer each!)
 - One feature that need to go on about/index.html is this div:
-    <div id=”git-is-great”></div>
+    ```<div id=”git-is-great”></div>```
 - The other feature is a paragraph that describes the group and the website, for example:
-    <p>We are developers and this is a very small collection of cafes and pubs we like.</p>
+    ```<p>We are developers and this is a very small collection of cafes and pubs we like.</p>```
 
 #### CSS bug
 The pagraph under the title ("On this site you can find some of our favourite cafes and pubs in Bristol") is meant to be centered. It seems the css declarations were accidentally deleted. They need to be added in again.
